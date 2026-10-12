@@ -32,10 +32,17 @@ h1{font-family:var(--serif);font-size:2.65rem;line-height:1.15;letter-spacing:-.
 .profile-links a:hover{text-decoration:underline}
 .email-link{display:flex;align-items:center;gap:.5rem;max-width:100%}
 .email-link svg{width:18px;height:18px;flex:0 0 auto}
-.profile-socials{display:flex;gap:.65rem;margin:.6rem 0 0}
+.profile-socials{display:flex;flex-wrap:wrap;gap:.65rem;margin:.6rem 0 0}
 .social-link{display:grid;place-items:center;position:relative;width:44px;height:44px;border:1px solid var(--line);border-radius:4px;background:#fff}
 .social-link:hover{background:var(--soft);border-color:#9db3c7}
 .social-link img,.social-link svg{width:23px;height:23px}
+.like-button{display:flex;align-items:center;justify-content:center;gap:.4rem;width:auto;min-width:70px;padding:0 .6rem;font:inherit;color:var(--accent);cursor:pointer}
+.like-button svg{flex:0 0 23px}
+.like-count{font-size:.8125rem;font-variant-numeric:tabular-nums;white-space:nowrap}
+.like-button.is-liked{background:var(--soft);border-color:#9db3c7}
+.like-button.is-liked svg{fill:var(--accent);stroke:var(--accent)}
+.like-button:disabled{cursor:default}
+.like-button[aria-busy="true"]{opacity:.65}
 .profile-socials .social-link:first-child img{filter:invert(31%) sepia(67%) saturate(1800%) hue-rotate(198deg) brightness(96%)}
 .profile-note{font-size:.8125rem;line-height:1.9;color:var(--muted);margin-top:2rem;padding-top:1.5rem;border-top:1px solid var(--line);max-width:205px}
 main{min-width:0;scroll-margin-top:calc(var(--nav-height,90px) + 1.5rem)}
