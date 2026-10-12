@@ -74,6 +74,11 @@ h3{font-size:1rem;line-height:1.5;font-weight:600;margin:.4rem 0 .6rem}
 .paper-detail{font-size:.875rem;margin-top:.6rem}
 summary{cursor:pointer;color:var(--accent);width:fit-content;padding:.1rem .2rem .1rem 0}
 summary:hover{text-decoration:underline;text-underline-offset:.2em}
+.figure-toggle summary{padding:.35rem .2rem .35rem 0;min-height:2.2rem}
+.figure-toggle .hide-figure{display:none}
+.figure-toggle[open] .show-figure{display:none}
+.figure-toggle[open] .hide-figure{display:inline}
+.figure-toggle .paper-figure{margin:.75rem 0 .9rem}
 figure{margin:1rem 0 .5rem;padding:1rem;border:1px solid var(--line);background:#fff}
 figure img{display:block;width:100%;height:auto}
 .paper-figure{margin:1.2rem 0;padding:.8rem;border:1px solid var(--line);border-radius:4px;box-shadow:0 2px 8px #18395606}
