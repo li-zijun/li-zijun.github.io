@@ -1,7 +1,7 @@
 (function() {
   const currentPage = document.body.dataset.page;
   const routes = {
-    about: { page: 'about', href: 'index.html' },
+    about: { page: 'about', href: '/' },
     publications: { page: 'publications', href: 'publications.html' },
     patents: { page: 'publications', href: 'publications.html#patents' }
   };
@@ -12,7 +12,7 @@
     if (routes[id] && routes[id].page !== currentPage) {
       window.location.replace(routes[id].href);
     } else if ((id === 'research' || id === 'education') && currentPage !== 'about') {
-      window.location.replace('index.html#' + id);
+      window.location.replace('/#' + id);
     }
   }
   restoreLegacyLink();
