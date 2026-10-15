@@ -148,6 +148,8 @@ footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.4rem 1rem;
 .page-toc a:hover{background:var(--soft);color:var(--accent)}
 .page-toc a[aria-current="location"]{border-left-color:var(--accent);background:var(--soft);color:var(--accent);font-weight:600}
 .has-page-toc [data-toc-target],.has-page-toc #about,.has-page-toc #research,.has-page-toc #education,.has-page-toc #experience{scroll-margin-top:1.5rem}
+.has-page-toc [data-toc-target]:target>.section-heading,.has-page-toc [data-toc-target]:target>h3{background:#edf3f8;box-shadow:-.45rem 0 0 var(--accent),.45rem 0 0 #edf3f8;border-radius:2px}
+.has-page-toc article[data-toc-target]:target{background:#f7f9fc;outline:1px solid #dce6ef;outline-offset:.65rem;border-radius:3px}
 .moment{margin-bottom:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid var(--line)}
 .moment:last-child{margin-bottom:0;border-bottom:0}
 .moment h3{font-size:1.1875rem;line-height:1.5;margin:.5rem 0 .6rem}
@@ -159,6 +161,7 @@ footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.4rem 1rem;
 .moment-photo>a{display:block}
 .moment-photo img{border-radius:4px}
 .moment-photo figcaption{margin-top:.65rem}
+.moment-photo-toggle .moment-photo{margin-top:.75rem}
 @media(min-width:1280px){
   .has-page-toc .topbar{max-width:1440px}
   .has-page-toc .page{max-width:1440px;grid-template-columns:220px minmax(0,1fr) 190px;column-gap:2.5rem;row-gap:0}

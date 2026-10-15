@@ -50,7 +50,9 @@
     entries.forEach(function(entry) {
       if (entry.target.getBoundingClientRect().top <= readingLine) current = entry;
     });
-    if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 2) {
+    if (document.documentElement.scrollHeight <= window.innerHeight + 2) {
+      current = entries.find(function(entry) { return entry.link.hash === window.location.hash; }) || entries[0];
+    } else if (window.scrollY > 0 && window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 2) {
       current = entries[entries.length - 1];
     }
     entries.forEach(function(entry) {
