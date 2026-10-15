@@ -18,15 +18,16 @@
   <link rel="icon" href="favicon.ico?v=2" sizes="any">
   <link rel="icon" type="image/png" href="assets/favicon-32.png?v=2" sizes="32x32">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="styles.css?v=5">
 </head>
-<body class="site-page publications-page" data-page="publications">
+<body class="site-page publications-page has-page-toc" data-page="publications">
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="topbar">
     <a class="site-mark" href="/" aria-label="Go to About"><img src="assets/site-mark.svg" alt="" width="44" height="44"></a>
     <nav aria-label="Main navigation">
       <a href="/">About</a>
       <a href="publications.html" aria-current="page">Publications &amp; Patents</a>
+      <a href="moments.html">Moments</a>
     </nav>
   </header>
   <div class="page">
@@ -48,10 +49,28 @@
         </div>
       </div>
     </aside>
+    <aside class="page-toc" aria-label="Page contents">
+      <details class="toc-disclosure" open>
+        <summary>On this page</summary>
+        <nav aria-label="On this page">
+          <ul class="toc-list">
+            <li class="toc-group">Publications</li>
+            <li><a href="#slm-security" title="Small Models, Big Variances: Unveiling the Impact of Execution Environments on SLMs’ Security" data-toc-link>Small Models, Big Variances</a></li>
+            <li><a href="#chameleon-attack" title="Semantics-Preserving Adversarial Attacks on Event-Driven Stock Prediction Models" data-toc-link>Semantics-Preserving Attacks</a></li>
+            <li><a href="#libsleuth" title="LibSleuth: Semantic-Aware and Lightweight Third-Party Library Detection for Android Software Supply Chain Security" data-toc-link>LibSleuth</a></li>
+            <li><a href="#activevideoagent" title="ActiveVideoAgent: Agent-Driven Spatio-Temporal Indexing for Long Video Reasoning" data-toc-link>ActiveVideoAgent</a></li>
+            <li><a href="#tmcir" title="TMCIR: Token Merge Benefits Composed Image Retrieval" data-toc-link>TMCIR</a></li>
+            <li><a href="#ast-fmvd" title="Software Vulnerability Detection Method Based on Abstract Syntax Tree Feature Migration (AST-FMVD)" data-toc-link>AST-FMVD</a></li>
+            <li class="toc-group">Patents</li>
+            <li><a href="#zero-shot-patent" title="Zero-Shot Vulnerability Detection Method Based on Transfer Learning" data-toc-link>Zero-Shot Vulnerability Detection</a></li>
+          </ul>
+        </nav>
+      </details>
+    </aside>
     <main id="main">
       <section id="publications" aria-labelledby="publications-heading">
         <div class="section-heading"><h2 id="publications-heading">Publications</h2></div>
-        <article class="publication">
+        <article id="slm-security" class="publication" data-toc-target>
           <div class="paper-meta"><span class="venue">ICICS 2026</span><span>Accepted · Conference paper</span></div>
           <h3><a href="assets/small-models-big-variances.pdf" target="_blank" rel="noopener">Small Models, Big Variances: Unveiling the Impact of Execution Environments on SLMs’ Security</a></h3>
           <p class="authors"><strong>Zijun Li</strong>, Tengfei Tu, Yuxin Lian, Zicheng Kong, Yiling Zhou, Aofan Liu, and Wenmin Li</p>
@@ -70,7 +89,7 @@
   note = {Accepted for publication}
 }</pre></div></details>
         </article>
-        <article class="publication">
+        <article id="chameleon-attack" class="publication" data-toc-target>
           <div class="paper-meta"><span class="venue">AAAI 2026</span><span>Published · Conference paper</span></div>
           <h3><a href="https://ojs.aaai.org/index.php/AAAI/article/view/41099" target="_blank" rel="noopener noreferrer">Semantics-Preserving Adversarial Attacks on Event-Driven Stock Prediction Models</a></h3>
           <p class="authors">Aofan Liu, Haoxuan Li, Hongjian Xing, Yuguo Yin, <strong>Zijun Li</strong>, and Yiyan Qi</p>
@@ -92,7 +111,7 @@
   doi = {10.1609/aaai.v40i44.41099}
 }</pre></div></details>
         </article>
-        <article class="publication">
+        <article id="libsleuth" class="publication" data-toc-target>
           <div class="paper-meta"><span class="venue">ICIVC 2026</span><span>Published · Conference paper</span></div>
           <h3><a href="https://doi.org/10.1109/ICIVC70586.2026.11686618" target="_blank" rel="noopener noreferrer">LibSleuth: Semantic-Aware and Lightweight Third-Party Library Detection for Android Software Supply Chain Security</a></h3>
           <p class="authors">Ying Yang, Chao Zhou, Can Xu, Kai Wang, and <strong>Zijun Li</strong> <span class="author-role">(corresponding author)</span></p>
@@ -113,7 +132,7 @@
   doi = {10.1109/ICIVC70586.2026.11686618}
 }</pre></div></details>
         </article>
-        <article class="publication">
+        <article id="activevideoagent" class="publication" data-toc-target>
           <div class="paper-meta"><span class="venue">IVMSP 2026</span><span>Published · Workshop paper</span></div>
           <h3><a href="https://doi.org/10.1109/IVMSP68335.2026.11618820" target="_blank" rel="noopener noreferrer">ActiveVideoAgent: Agent-Driven Spatio-Temporal Indexing for Long Video Reasoning</a></h3>
           <p class="authors">Xi Guo, Lili Jia, Jiawei Zhang, <strong>Zijun Li</strong>, Jibo Qin, Liye Zhang, Zhensheng Di, and Guan Wang</p>
@@ -134,7 +153,7 @@
   doi = {10.1109/IVMSP68335.2026.11618820}
 }</pre></div></details>
         </article>
-        <article class="publication">
+        <article id="tmcir" class="publication" data-toc-target>
           <div class="paper-meta"><span class="venue">arXiv 2025</span><span>Preprint</span></div>
           <h3><a href="https://arxiv.org/abs/2504.10995" target="_blank" rel="noopener noreferrer">TMCIR: Token Merge Benefits Composed Image Retrieval</a></h3>
           <p class="authors">Chaoyang Wang, Zeyu Zhang, Long Teng, <strong>Zijun Li</strong>, and Shichao Kan</p>
@@ -154,7 +173,7 @@
   doi = {10.48550/arXiv.2504.10995}
 }</pre></div></details>
         </article>
-        <article class="publication">
+        <article id="ast-fmvd" class="publication" data-toc-target>
           <div class="paper-meta"><span class="venue">2024</span><span>Journal article</span></div>
           <h3><a href="https://doi.org/10.20165/j.cnki.ISSN1673-629X.2024.0065" target="_blank" rel="noopener noreferrer">Software Vulnerability Detection Method Based on Abstract Syntax Tree Feature Migration (AST-FMVD)</a></h3>
           <p class="authors"><strong>Zi-jun Li</strong>, Tao Li, Hao-dong Chen, Qin Yu, Meng-qing Qiao, Lin Li, Jie Wang, Zhen-hua Wan, and Jing-han Song</p>
@@ -181,7 +200,7 @@
 
       <section id="patents" aria-labelledby="patents-heading">
         <div class="section-heading"><h2 id="patents-heading">Patents</h2></div>
-        <article class="patent">
+        <article id="zero-shot-patent" class="patent" data-toc-target>
           <div class="paper-meta"><span class="venue">Chinese invention patent</span><span>Granted · 22 September 2026</span></div>
           <h3>Zero-Shot Vulnerability Detection Method Based on Transfer Learning</h3>
           <p class="authors"><strong>Zijun Li</strong> <span class="author-role">(first inventor)</span>, Tao Li, Hao-dong Chen, Qin Yu, Meng-qing Qiao, Lin Li, Jie Wang, Zhen-hua Wan, and Jing-han Song</p>
@@ -195,6 +214,6 @@
     </main>
   </div>
   <p id="copy-status" class="sr-only" role="status" aria-live="polite"></p>
-  <script src="script.js?v=3"></script>
+  <script src="script.js?v=4"></script>
 </body>
 </html>

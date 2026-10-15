@@ -27,6 +27,58 @@
   if (window.ResizeObserver) new ResizeObserver(updateHeaderHeight).observe(header);
 })();
 
+(function() {
+  const directory = document.querySelector('.page-toc');
+  if (!directory) return;
+  const disclosure = directory.querySelector('.toc-disclosure');
+  const wideScreen = window.matchMedia('(min-width:1280px)');
+  const entries = Array.from(directory.querySelectorAll('[data-toc-link]')).map(function(link) {
+    return { link: link, target: document.getElementById(link.hash.slice(1)) };
+  }).filter(function(entry) { return entry.target; });
+  if (!entries.length) return;
+
+  function setDisclosureLayout() { disclosure.open = wideScreen.matches; }
+  setDisclosureLayout();
+  wideScreen.addEventListener('change', setDisclosureLayout);
+
+  let scheduled = false;
+  function updateCurrentEntry() {
+    scheduled = false;
+    const header = document.querySelector('.topbar');
+    const readingLine = header.getBoundingClientRect().bottom + Math.min(160, window.innerHeight * .2);
+    let current = entries[0];
+    entries.forEach(function(entry) {
+      if (entry.target.getBoundingClientRect().top <= readingLine) current = entry;
+    });
+    if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 2) {
+      current = entries[entries.length - 1];
+    }
+    entries.forEach(function(entry) {
+      if (entry === current) entry.link.setAttribute('aria-current', 'location');
+      else entry.link.removeAttribute('aria-current');
+    });
+  }
+  function scheduleUpdate() {
+    if (!scheduled) {
+      scheduled = true;
+      window.requestAnimationFrame(updateCurrentEntry);
+    }
+  }
+  entries.forEach(function(entry) {
+    entry.link.addEventListener('click', function() {
+      if (!wideScreen.matches) disclosure.open = false;
+      scheduleUpdate();
+    });
+  });
+  window.addEventListener('scroll', scheduleUpdate, { passive: true });
+  window.addEventListener('resize', scheduleUpdate);
+  window.addEventListener('hashchange', scheduleUpdate);
+  window.addEventListener('load', scheduleUpdate);
+  document.addEventListener('toggle', scheduleUpdate, true);
+  if (window.ResizeObserver) new ResizeObserver(scheduleUpdate).observe(document.querySelector('main'));
+  updateCurrentEntry();
+})();
+
 document.querySelectorAll('[data-citation]').forEach(function(button) {
   button.addEventListener('click', async function() {
     const citation = document.getElementById(button.dataset.citation);

@@ -18,7 +18,7 @@
   <link rel="icon" href="favicon.ico?v=2" sizes="any">
   <link rel="icon" type="image/png" href="assets/favicon-32.png?v=2" sizes="32x32">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="styles.css?v=5">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -65,13 +65,14 @@
 }
   </script>
 </head>
-<body class="site-page about-page" data-page="about">
+<body class="site-page about-page has-page-toc" data-page="about">
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="topbar">
     <a class="site-mark" href="/" aria-label="Go to About"><img src="assets/site-mark.svg" alt="" width="44" height="44"></a>
     <nav aria-label="Main navigation">
       <a href="/" aria-current="page">About</a>
       <a href="publications.html">Publications &amp; Patents</a>
+      <a href="moments.html">Moments</a>
     </nav>
   </header>
   <div class="page">
@@ -93,25 +94,38 @@
         </div>
       </div>
     </aside>
+    <aside class="page-toc" aria-label="Page contents">
+      <details class="toc-disclosure" open>
+        <summary>On this page</summary>
+        <nav aria-label="On this page">
+          <ul class="toc-list">
+            <li><a href="#about" data-toc-link>About</a></li>
+            <li><a href="#research" data-toc-link>Research interests</a></li>
+            <li><a href="#education" data-toc-link>Education</a></li>
+            <li><a href="#experience" data-toc-link>Research experience</a></li>
+          </ul>
+        </nav>
+      </details>
+    </aside>
     <main id="main">
-      <section id="about" class="about" aria-labelledby="about-heading">
+      <section id="about" class="about" aria-labelledby="about-heading" data-toc-target>
         <div class="section-heading"><h2 id="about-heading">About</h2></div>
         <p class="intro">I am a master’s student in Network and Information Security at Beijing University of Posts and Telecommunications, with expected graduation in June 2027. I am also a Research Assistant at The Chinese University of Hong Kong.</p>
         <p>My research spans AI for Security and Security of AI, with work on learning-based vulnerability detection, language model robustness, and the security of AI agents.</p>
         <p>I also collaborate on multimodal image retrieval and long-video reasoning. I received my bachelor’s degree in Information Security from Wuhan University of Science and Technology in June 2024.</p>
-        <div id="research" class="about-research" aria-labelledby="research-heading">
+        <div id="research" class="about-research" aria-labelledby="research-heading" data-toc-target>
           <h3 id="research-heading" class="subsection-title">Research interests</h3>
         <div class="research-grid">
           <article><span class="research-index" aria-hidden="true">I.</span><h4>AI for Security</h4><p>Machine learning and language models for software vulnerability detection, malicious application analysis, and security-related web content analysis.</p></article>
           <article><span class="research-index" aria-hidden="true">II.</span><h4>Security of AI</h4><p>Security and robustness of language models and AI agents, including adversarial evaluation, deployment environments, cross-origin information use, and hallucination propagation in multi-agent systems.</p></article>
         </div>
         </div>
-      <div id="education" class="about-education" aria-labelledby="education-heading">
+      <div id="education" class="about-education" aria-labelledby="education-heading" data-toc-target>
         <div class="section-heading"><h3 id="education-heading">Education</h3></div>
         <div class="background-item"><span class="background-year">Sep 2024 –<br>Jun 2027 (expected)</span><div><div class="school-heading"><a class="school-logo" href="https://www.bupt.edu.cn/" target="_blank" rel="noopener noreferrer" aria-label="Beijing University of Posts and Telecommunications website" title="BUPT website"><img src="assets/bupt-emblem.png" alt="" width="54" height="54" loading="lazy"></a><div><h4><a href="https://www.bupt.edu.cn/" target="_blank" rel="noopener noreferrer">Beijing University of Posts and Telecommunications</a></h4><p class="degree">M.Eng. in Network and Information Security</p></div></div><p class="background-location">Beijing, China</p><p class="background-unit"><a href="https://sklnst.bupt.edu.cn/en/" target="_blank" rel="noopener noreferrer">State Key Laboratory of Networking and Switching Technology</a></p><p class="advisor">Research advisor: <a href="https://tengfei1010.github.io/" target="_blank" rel="noopener noreferrer">Tengfei Tu</a></p></div></div>
         <div class="background-item"><span class="background-year">Sep 2020 –<br>Jun 2024</span><div><div class="school-heading"><a class="school-logo" href="https://en.wust.edu.cn/index.htm" target="_blank" rel="noopener noreferrer" aria-label="Wuhan University of Science and Technology website" title="WUST website"><img src="assets/wust-emblem.png" alt="" width="54" height="54" loading="lazy"></a><div><h4><a href="https://en.wust.edu.cn/index.htm" target="_blank" rel="noopener noreferrer">Wuhan University of Science and Technology</a></h4><p class="degree">B.Eng. in Information Security</p></div></div><p class="background-location">Wuhan, Hubei, China</p><p class="background-unit">School of Computer Science and Technology</p><p class="background-unit"><a href="https://znxxcl.wust.edu.cn/" target="_blank" rel="noopener noreferrer">Hubei Provincial Key Laboratory of Intelligent Information Processing and Real-Time Industrial Systems</a></p><p>GPA: 3.70 / 4.00</p><p class="advisor">Research advisor: <a href="https://jsjkx.wust.edu.cn/info/1021/34102.htm" target="_blank" rel="noopener noreferrer">Tao Li</a></p></div></div>
         <div class="background-item"><span class="background-year">2017 – 2020</span><div><div class="school-heading"><a class="school-logo" href="https://www.hbxggz.cn/" target="_blank" rel="noopener noreferrer" aria-label="Hubei Xiaogan Senior Middle School website" title="Hubei Xiaogan Senior Middle School website"><img src="assets/xiaogan-emblem.jpg" alt="" width="54" height="54" loading="lazy"></a><div><h4><a href="https://www.hbxggz.cn/" target="_blank" rel="noopener noreferrer">Hubei Xiaogan Senior Middle School</a></h4><p class="degree">Senior secondary education</p></div></div><p class="background-location">Xiaogan, Hubei, China</p></div></div>
-        <div class="experience-group" aria-labelledby="experience-heading">
+        <div id="experience" class="experience-group" aria-labelledby="experience-heading" data-toc-target>
           <h3 id="experience-heading" class="experience-title">Research experience</h3>
           <div class="background-item"><span class="background-year">May 2026 –<br>present</span><div><div class="school-heading"><a class="school-logo" href="https://www.cuhk.edu.hk/" target="_blank" rel="noopener noreferrer" aria-label="The Chinese University of Hong Kong website" title="CUHK website"><img src="assets/cuhk-emblem.jpg" alt="" width="54" height="54" loading="lazy"></a><div><h4><a href="https://www.cuhk.edu.hk/" target="_blank" rel="noopener noreferrer">The Chinese University of Hong Kong</a></h4><p class="degree">Research Assistant</p></div></div><p class="background-location">Hong Kong SAR, China</p><p class="advisor">Research advisor: <a href="https://diwenx.com/" target="_blank" rel="noopener noreferrer">Diwen Xue</a></p><p class="experience-description">Studying how content from different web origins influences browser-based AI agents. This ongoing project uses execution-trace analysis, controlled context masking, and action replay to distinguish individual and joint source effects.</p></div></div>
           <div class="background-item"><span class="background-year">Oct 2024 –<br>May 2026</span><div><div class="school-heading"><a class="school-logo" href="https://www.tsinghua.edu.cn/en/index.htm" target="_blank" rel="noopener noreferrer" aria-label="Tsinghua University website" title="Tsinghua University website"><img src="assets/tsinghua-emblem.png" alt="" width="54" height="54" loading="lazy"></a><div><h4><a href="https://www.tsinghua.edu.cn/en/index.htm" target="_blank" rel="noopener noreferrer">Tsinghua University</a></h4><p class="degree">Research Assistant</p></div></div><p class="background-location">Shenzhen, Guangdong, China</p><p class="background-unit">Shenzhen International Graduate School</p><p class="experience-description">Built agricultural multimodal data pipelines for dataset collection, image–text cleaning and conversion, augmentation, and multi-turn dialogue processing. Reproduced a LLaVA demo and refined video workflows for structured and unstructured information extraction.</p><p class="experience-description">Trained and evaluated Qwen-based models, including agricultural instruction tuning with Qwen2.5-VL and LLaMA-Factory, and experiments with Qwen3-4B. Compared prompting, LoRA and full fine-tuning, data proportions, and inference settings, and reproduced a fraud-detection evaluation pipeline.</p></div></div>
@@ -123,6 +137,6 @@
     </main>
   </div>
   <p id="copy-status" class="sr-only" role="status" aria-live="polite"></p>
-  <script src="script.js?v=3"></script>
+  <script src="script.js?v=4"></script>
 </body>
 </html>

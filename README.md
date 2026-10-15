@@ -1,9 +1,10 @@
 # Zijun Li — Academic Website
 
-A static academic website for Zijun Li, with two independent pages:
+A static academic website for Zijun Li, with three independent pages:
 
 - `index.html`: biography, research interests, education, and research experience.
 - `publications.html`: publications and the granted invention patent.
+- `moments.html`: event photographs, dates, and locations.
 - `patents.html`: redirect for older patent links.
 
 ## GitHub Pages
@@ -18,5 +19,5 @@ See the [GitHub Pages quickstart](https://docs.github.com/en/pages/quickstart) a
 
 ## Editing
 
-Edit the HTML files to update content, `styles.css` to change appearance, and `script.js` for citation copying and older links. Keep asset filenames and links consistent. The portrait, original paper figures, and Chinese name signature are self-hosted under `assets/`.
+Edit the HTML files to update content, `styles.css` to change appearance, and `script.js` for the page directory, citation copying, shared likes, and older links. Each page has an in-page directory. Keep asset filenames and links consistent. The portrait, original paper figures, event photographs, and Chinese name signature are self-hosted under `assets/`.
 
