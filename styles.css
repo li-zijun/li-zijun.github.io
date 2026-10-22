@@ -3,6 +3,12 @@
 [hidden]{display:none!important}
 html{scroll-behavior:auto;scroll-padding-top:var(--nav-height,90px)}
 body{margin:0;background:var(--white);color:var(--ink);font-family:var(--sans);font-size:1rem;line-height:1.75;overflow-wrap:anywhere;-webkit-font-smoothing:antialiased}
+/* Homepage reading style, matching the supplied Trebuchet MS reference. */
+.about-page{--sans:"Trebuchet MS",Helvetica,Arial,sans-serif;line-height:1.5}
+.about-page .about{color:#494e52}
+body.about-page .about p{color:inherit;line-height:1.5}
+.about-page .about>.intro{font-size:1rem}
+.about-page .about>p{margin-bottom:.75rem}
 a{color:var(--accent);text-underline-offset:.22em;text-decoration-thickness:1px}
 a:hover{text-decoration:underline;color:#0a5680}
 a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #477aab;outline-offset:5px;border-radius:2px}
